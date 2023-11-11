@@ -2,7 +2,7 @@ def get_hot_months_counter(listfTemperatures):
   hot_months = 0
 
   for data in listfTemperatures.values():
-    temperature = data['temperature']
+    temperature = data["temperature"]
 
     if temperature > 38:
       hot_months += 1
