@@ -1,11 +1,20 @@
 from user_inputs import user_inputs
 
-try:
-  month = user_inputs.get_month()
-  print(month)
 
-  temperature = user_inputs.get_temperature()
-  print(temperature)
+months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
+monthly_data = {}
+
+
+try:
+
+  for month_index in range(12):
+    month = user_inputs.get_month()
+    temperature = user_inputs.get_temperature()
+
+    monthly_data[month_index] = { 'month': months[month -1], 'temperature': temperature }
+
+  print(monthly_data)
+
 
 
 except KeyboardInterrupt:
