@@ -1,6 +1,7 @@
 from user_inputs import user_inputs
-from utils.max_avg_temperature import get_max_avg_temperature
 from utils.monts_data import months
+from utils.max_avg_temperature import get_max_avg_temperature
+from utils.hot_months_counter import get_hot_months_counter
 
 monthly_data = {}
 
@@ -12,6 +13,7 @@ def weather_analysis():
     monthly_data[month_index] = { 'month': months[month -1], 'temperature': temperature }
 
   get_max_avg_temperature(monthly_data)
+  get_hot_months_counter(monthly_data)
     
 try:
   weather_analysis()
