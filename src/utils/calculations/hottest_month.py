@@ -1,5 +1,5 @@
 def get_hottest_month(listOfValues):
-  max_temperature = 0
+  max_temperature = float("-inf")
   max_monthly_temperature = ""
 
   for data in listOfValues.values():
