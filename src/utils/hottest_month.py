@@ -11,4 +11,4 @@ def get_hottest_month(listOfValues):
       max_monthly_temperature = month
       continue    
 
-  print(f"\nMês mais escaldante do ano foi no mês de {max_monthly_temperature} com {max_temperature} graus.")
+  print(f"Mês mais escaldante do ano foi no mês de {max_monthly_temperature} com {max_temperature} graus.")

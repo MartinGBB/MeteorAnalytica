@@ -7,7 +7,7 @@ from utils.hottest_month import get_hottest_month
 monthly_data = {}
 
 def weather_analysis():
-  for month_index in range(3):
+  for month_index in range(2):
     month = user_inputs.get_month()
     temperature = user_inputs.get_temperature()
 

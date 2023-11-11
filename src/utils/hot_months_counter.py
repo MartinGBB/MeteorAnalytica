@@ -11,6 +11,6 @@ def get_hot_months_counter(listfTemperatures):
   if hot_months > 1:
     print(f"Teve {hot_months} meses escaldantes.")
   elif hot_months == 0:
-    print("Não teve meses escaldantes")
+    print("Não teve meses escaldantes (acima de 38 graus)")
   else:
     print(f"Teve apenas um mês escaldante.")
