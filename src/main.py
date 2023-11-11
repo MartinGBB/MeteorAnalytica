@@ -1,7 +1,7 @@
 from user_inputs import user_inputs
-from utils import max_avg_temperature
+from utils.max_avg_temperature import get_max_avg_temperature
+from utils.monts_data import months
 
-months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
 monthly_data = {}
 
 def weather_analysis():
@@ -11,8 +11,8 @@ def weather_analysis():
 
     monthly_data[month_index] = { 'month': months[month -1], 'temperature': temperature }
 
-  return max_avg_temperature.get_max_avg_temperature(monthly_data)
-
+  get_max_avg_temperature(monthly_data)
+    
 try:
   weather_analysis()
 except KeyboardInterrupt:

@@ -1,5 +1,4 @@
 def get_max_avg_temperature(listOfTemperatures):
-
   sumTemperature = 0
 
   for data in listOfTemperatures.values():
@@ -8,4 +7,4 @@ def get_max_avg_temperature(listOfTemperatures):
 
   average = round(sumTemperature/len(listOfTemperatures), 2)
   
-  return average
+  print(f"\nTemperatura média máxima anual é de {average} graus.")
