@@ -5,7 +5,7 @@ def validate_month(month):
   return month
 
 def validate_temperature(temperature):
-  if not(temperature >= 60 and temperature <= 50):
+  if not(temperature >= -60 and temperature <= 50):
     raise ValueError("A temperatura tem que estar dentro de um intervalo de -60 graus à +50 graus.")
     
   return temperature
