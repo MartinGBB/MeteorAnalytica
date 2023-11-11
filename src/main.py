@@ -1,12 +1,9 @@
 from user_inputs import user_inputs
 
-
 months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
 monthly_data = {}
 
-
-try:
-
+def weather_analysis():
   for month_index in range(12):
     month = user_inputs.get_month()
     temperature = user_inputs.get_temperature()
@@ -15,7 +12,7 @@ try:
 
   print(monthly_data)
 
-
-
+try:
+  weather_analysis()
 except KeyboardInterrupt:
   print("\nPrograma interrompido manualmente.\nAté mais.")
