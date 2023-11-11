@@ -9,3 +9,12 @@ def get_month():
 
   month = handle_user_input(value_type, validation, prompt, messageErrorType)
   return month
+
+def get_temperature():
+  value_type = float
+  validation = validations.validate_temperature
+  messageErrorType = "O valor da temperatura é inválido. Deve ser um número."
+  prompt = "\nDigite a temperatura: "
+
+  temperature = handle_user_input(value_type, validation, prompt, messageErrorType)
+  return temperature

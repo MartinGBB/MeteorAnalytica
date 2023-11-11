@@ -13,7 +13,7 @@ def handle_user_input(input_type, func_validation, prompt, messageErrorType):
       validated_input = input_type(user_input)
       return func_validation(validated_input)
     except ValueError as error:
-      if "invalid literal" in str(error):
+      if "invalid literal" in str(error) or "float" in str(error):
         print(messageErrorType)
       else:
         print(error)

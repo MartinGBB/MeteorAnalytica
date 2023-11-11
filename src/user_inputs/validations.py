@@ -3,3 +3,6 @@ def validate_month(value):
     raise ValueError("O valor do mês é inválido. Insira um número entre 1 e 12.")
   else:
     return value
+
+def validate_temperature(value):
+  return value
