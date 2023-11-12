@@ -24,3 +24,5 @@ def mock_weather_analysis():
   get_hot_months_counter(monthly_data)
   get_hottest_month(monthly_data)
   get_coldest_month(monthly_data)
+
+mock_weather_analysis()
