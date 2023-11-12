@@ -8,7 +8,7 @@ from utils.calculations.coldest_month import get_coldest_month
 monthly_data = {}
 
 def weather_analysis():
-  for month_index in range(2):
+  for month_index in range(12):
     month = user_inputs.get_month()
     temperature = user_inputs.get_temperature()
 
@@ -18,7 +18,7 @@ def weather_analysis():
   get_hot_months_counter(monthly_data)
   get_hottest_month(monthly_data)
   get_coldest_month(monthly_data)
-    
+
 try:
   weather_analysis()
 except KeyboardInterrupt:
