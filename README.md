@@ -29,6 +29,10 @@ Siga as instruções fornecidas para inserir os dados meteorológicos.
 
 O programa primeiro pedira que seja informado o mes, e depois a temperatura, o mes deve estar em um intervalo de 1 a 12, representado por cada mês do ano. A temperatura deve estar dentro de um intervalo aceitável para o clima (-60 a 50 graus).
 
+> **Dica: Utilizando o arquivo mock_main.py para Visualização de Dados**
+>
+> O arquivo `mock_main.py` foi incluído para facilitar a visualização de dados, permitindo a visualização e execução de exemplos sem a necessidade de inserir manualmente os dados toda vez. É útil para testes e demonstrações de funcionalidades sem a necessidade de fornecer novos dados a cada execução.
+
 
 ## Instruções de Entrada
 * O programa solicitará inicialmente o número do mês, seguido pela temperatura. O número do mês deve estar dentro do intervalo de 1 a 12, representando cada mês do ano. 
