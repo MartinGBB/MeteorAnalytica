@@ -19,12 +19,8 @@ monthly_data = {
   12: {'month': 'Dezembro', 'temperature': 23}
 }
 
-def weather_analysis():
+def mock_weather_analysis():
   get_max_avg_temperature(monthly_data)
   get_hot_months_counter(monthly_data)
   get_hottest_month(monthly_data)
   get_coldest_month(monthly_data)
-try:
-  weather_analysis()
-except KeyboardInterrupt:
-  print("Programa interrompido manualmente.\nAté mais.")
